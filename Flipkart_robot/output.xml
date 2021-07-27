@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 4.0.3 (Python 3.9.6 on win32)" generated="20210727 11:54:49.627" rpa="false" schemaversion="2">
+<suite id="s1" name="Flip" source="c:\Users\user\Documents\khurram - Moolya\assinments\Flipkart_robot\flip.robot">
+<test id="s1-t1" name="Valid Test">
+<kw name="Open Browser To flipkart">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20210727 11:54:50.037" level="INFO">Opening browser 'Chrome' to base url 'https://flipkart.com'.</msg>
+<status status="PASS" starttime="20210727 11:54:50.037" endtime="20210727 11:54:55.408"/>
+</kw>
+<status status="PASS" starttime="20210727 11:54:50.037" endtime="20210727 11:54:55.408"/>
+</kw>
+<kw name="Input username">
+<arg>username</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input</arg>
+<arg>9740105480</arg>
+<arg>${username}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210727 11:54:55.408" level="INFO">Typing text '9740105480' into text field '//html/body/div[2]/div/div/div/div/div[2]/div/form/div[1]/input'.</msg>
+<status status="PASS" starttime="20210727 11:54:55.408" endtime="20210727 11:54:55.680"/>
+</kw>
+<status status="PASS" starttime="20210727 11:54:55.408" endtime="20210727 11:54:55.680"/>
+</kw>
+<kw name="Input password">
+<arg>password</arg>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input</arg>
+<arg>bismillah</arg>
+<arg>${password}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20210727 11:54:55.680" level="INFO">Typing text 'bismillah' into text field '//html/body/div[2]/div/div/div/div/div[2]/div/form/div[2]/input'.</msg>
+<status status="PASS" starttime="20210727 11:54:55.680" endtime="20210727 11:54:55.851"/>
+</kw>
+<status status="PASS" starttime="20210727 11:54:55.680" endtime="20210727 11:54:55.851"/>
+</kw>
+<kw name="Login">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20210727 11:54:55.857" level="INFO">Clicking button '//html/body/div[2]/div/div/div/div/div[2]/div/form/div[4]/button'.</msg>
+<status status="PASS" starttime="20210727 11:54:55.851" endtime="20210727 11:54:56.018"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210727 11:54:59.018" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210727 11:54:56.018" endtime="20210727 11:54:59.018"/>
+</kw>
+<status status="PASS" starttime="20210727 11:54:55.851" endtime="20210727 11:54:59.018"/>
+</kw>
+<kw name="Press electronics &amp; add to cart">
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[2]/div/div/div[3]/a/div[1]/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20210727 11:54:59.018" level="INFO">Clicking image '//*[@id="container"]/div/div[2]/div/div/div[3]/a/div[1]/div/img'.</msg>
+<status status="PASS" starttime="20210727 11:54:59.018" endtime="20210727 11:54:59.232"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210727 11:55:02.234" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210727 11:54:59.232" endtime="20210727 11:55:02.234"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[3]/div[5]/div/div[1]/a/div/img[2]</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20210727 11:55:02.234" level="INFO">Clicking image '//*[@id="container"]/div/div[3]/div[5]/div/div[1]/a/div/img[2]'.</msg>
+<status status="PASS" starttime="20210727 11:55:02.234" endtime="20210727 11:55:02.418"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20210727 11:55:05.420" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210727 11:55:02.418" endtime="20210727 11:55:05.420"/>
+</kw>
+<kw name="Click Image" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[3]/div/div/div[2]/div[1]/a/div[1]/div/img</arg>
+<doc>Clicks an image identified by ``locator``.</doc>
+<msg timestamp="20210727 11:55:05.420" level="INFO">Clicking image '//*[@id="container"]/div/div[3]/div/div/div[2]/div[1]/a/div[1]/div/img'.</msg>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20210727 11:55:05.811" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20210727 11:55:05.442" endtime="20210727 11:55:05.811"/>
+</kw>
+<msg timestamp="20210727 11:55:05.842" level="FAIL">Input with locator '//*[@id="container"]/div/div[3]/div/div/div[2]/div[1]/a/div[1]/div/img' not found.</msg>
+<status status="FAIL" starttime="20210727 11:55:05.420" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${cart}</var>
+<arg>//*[@id="container"]/div/div[3]/div/div[2]/div[2]/div/div[1]/div/a[2]</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[3]/div/div[2]/div[2]/div/div[1]/div/a[2]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>new</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>//*[@id="container"]/div/div[1]/div[1]/div[2]/div[5]/div/div/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Get Text" library="SeleniumLibrary">
+<var>${added}</var>
+<arg>//*[@id="container"]/div/div[2]/div/div/div[1]/div/div[2]/div/div[1]/div[1]/div[1]/a</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<if>
+<branch type="IF" condition="&quot;${added}&quot; == &quot;${cart}&quot;">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Added "${added}"</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</branch>
+<branch type="ELSE">
+<kw name="Log To Console" library="BuiltIn">
+<arg>Not Added</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</branch>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</if>
+<kw name="Sleep" library="BuiltIn">
+<arg>33s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20210727 11:55:05.842" endtime="20210727 11:55:05.842"/>
+</kw>
+<status status="FAIL" starttime="20210727 11:54:59.018" endtime="20210727 11:55:05.842"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20210727 11:55:05.842" endtime="20210727 11:55:08.279"/>
+</kw>
+<status status="FAIL" starttime="20210727 11:54:50.037" endtime="20210727 11:55:08.279">Input with locator '//*[@id="container"]/div/div[3]/div/div/div[2]/div[1]/a/div[1]/div/img' not found.</status>
+</test>
+<doc>Testing on FLIPKART</doc>
+<status status="FAIL" starttime="20210727 11:54:49.627" endtime="20210727 11:55:08.279"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="Flip">Flip</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
